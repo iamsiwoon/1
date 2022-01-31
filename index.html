@@ -1,43 +1,41 @@
 <!doctype html>
 <html>
 <head>
-  <title>SIUN - WELCOME!</title>
+  <title>WELCOME!</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:black;
-    }
-  </style>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-  <a href="index.html"><img src="Images/HOME 1-1.png" width="100%"><br>
-  <h1><a href="index.html">SIUN</a></h1>
-  <ol>
-    <li><a href="kpw4404.html">kpw4404</a></li>
-    <ol>
-      <li><a href="kpw4404 Main.html">Main</a></li>
-      <li><a href="kpw4404 Brand.html">Brand</a></li>
+  <h1><a href="index.html" class="a">SIUN</a></h1>
+  <?--input type="button" value="ON" onclick="
+  var target1 = document.querySelector('body');
+  var target2 = document.querySelector('h1');
+  var target3 = document.querySelector('#grid1 ol');
+  if(this.value === 'ON'){
+    target1.style.backgroundColor = 'black';
+    target1.style.color='white';
+    target2.style.borderColor='white';
+    target3.style.borderColor='white';
+    this.value = 'OFF';
+  } else {
+    target1.style.backgroundColor = 'white';
+    target1.style.color='black';
+    target2. style.borderColor='black';
+    target3.style.borderColor='black';
+    this.value = 'ON';
+  }"-->
+  <div id="grid1">
+    <ol class="ol">
+      <li><a href="kpw4404.html" class="a">kpw4404</a></li>
+      <li><a href="kpw6790.html" class="b">kpw6790</a></li>
     </ol>
-    <li><a href="kpw6790.html">kpw6790</a></li>
-  </ol>
-  <p>
-    <div id="lv-container" data-id="city" data-uid="MTAyMC81NTM1OS8zMTgyNg==">
-  	<script type="text/javascript">
-     (function(d, s) {
-         var j, e = d.getElementsByTagName(s)[0];
-
-         if (typeof LivereTower === 'function') { return; }
-
-         j = d.createElement(s);
-         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-         j.async = true;
-
-         e.parentNode.insertBefore(j, e);
-     })(document, 'script');
-  	</script>
-    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+    <div id="contents1">
+      <h2>My Accounts</h2>
+      <p>
+        It is a website that explains the purpose and profile of Siun's Google accounts.
+      </p>
     </div>
-  </p>
+  </div>
 </body>
 </html>
