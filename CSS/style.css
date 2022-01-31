@@ -1,0 +1,40 @@
+#grid1 {
+  display:grid;
+  grid-template-columns:110px 1fr;
+}
+#grid1 ol {
+  font-size: 15px;
+  margin:0px;
+  padding:20px;
+  padding-left: 33px;
+  border-right: black 2px solid;
+}
+#grid1 #contents1 {
+  padding-left:30px;
+}
+body {
+  margin:0px;
+  font-family: "Times New Roman", Times, serif;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 50px;
+  text-align:center;
+  border-bottom:black solid 2px;
+  padding:30px;
+  margin:0px;
+}
+@media(max-width:600px) {
+  #grid1 {
+    display:block;
+  }
+  #grid1 ol {
+    border-right:none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}
