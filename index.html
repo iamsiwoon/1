@@ -4,32 +4,61 @@
   <title>WELCOME!</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="CSS/style.css">
+  <script>
+    function BodySetBackgroundColor(color){
+      document.querySelector('body').style.backgroundColor=color;
+    }
+    function BodySetColor(color){
+      document.querySelector('body').style.color=color;
+    }
+    function LinksSetColor(color){
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color=color;
+        i = i + 1;
+      }
+    }
+    function DarkModeChanger(self){
+      if(self.value === 'ON'){
+        BodySetBackgroundColor('black');
+        BodySetColor('white');
+        LinksSetColor('white');
+        document.querySelector('h1').style.borderColor='white';
+        document.querySelector('#grid1 ul').style.borderColor='white';
+        document.querySelector('#DarkMode').style.borderColor='white';
+        self.value = 'OFF';
+      } else {
+        BodySetBackgroundColor('white');
+        BodySetColor('black');
+        LinksSetColor('black');
+        document.querySelector('h1'). style.borderColor='black';
+        document.querySelector('#grid1 ul').style.borderColor='black';
+        document.querySelector('#DarkMode').style.borderColor='black';
+        self.value = 'ON';
+      }
+    }
+  </script>
 </head>
 
 <body>
   <h1><a href="index.html" class="a">SIUN</a></h1>
-  <?--input type="button" value="ON" onclick="
-  var target1 = document.querySelector('body');
-  var target2 = document.querySelector('h1');
-  var target3 = document.querySelector('#grid1 ol');
-  if(this.value === 'ON'){
-    target1.style.backgroundColor = 'black';
-    target1.style.color='white';
-    target2.style.borderColor='white';
-    target3.style.borderColor='white';
-    this.value = 'OFF';
-  } else {
-    target1.style.backgroundColor = 'white';
-    target1.style.color='black';
-    target2. style.borderColor='black';
-    target3.style.borderColor='black';
-    this.value = 'ON';
-  }"-->
+  <p id="DarkMode">
+    Dark Mode
+    <input type="checkbox" value="ON" onclick="
+    DarkModeChanger(this)">
+  </p>
   <div id="grid1">
-    <ol class="ol">
-      <li><a href="kpw4404.html" class="a">kpw4404</a></li>
-      <li><a href="kpw6790.html" class="b">kpw6790</a></li>
-    </ol>
+    <ul>
+      <script>
+        var i = 0;
+        var accounts = ['kpw4404','kpw6790'];
+        while(i<accounts.length){
+          document.write('<li><a href="'+accounts[i]+'.html">'+accounts[i]+'</a></li>');
+          i = i + 1;
+        }
+      </script>
+    </ul>
     <div id="contents1">
       <h2>My Accounts</h2>
       <p>
