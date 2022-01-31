@@ -2,7 +2,7 @@
   display:grid;
   grid-template-columns:110px 1fr;
 }
-#grid1 ol {
+#grid1 ul {
   font-size: 15px;
   margin:0px;
   padding:20px;
@@ -23,18 +23,24 @@ a {
 h1 {
   font-size: 50px;
   text-align:center;
-  border-bottom:black solid 2px;
+  border-bottom:black solid 4px;
   padding:30px;
   margin:0px;
 }
+#DarkMode {
+  text-align:right;
+  margin:0px;
+  border-bottom:black solid 2px;
+}
+
+
+
+
 @media(max-width:600px) {
   #grid1 {
     display:block;
   }
-  #grid1 ol {
+  #grid1 ul {
     border-right:none;
-  }
-  h1 {
-    border-bottom: none;
   }
 }
